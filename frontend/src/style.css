@@ -1,0 +1,48 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 320px;
+    border-right: 1px solid #ddd;
+    padding: 16px;
+    overflow: auto;
+    background: #fafafa;
+}
+
+.content {
+    flex: 1;
+    padding: 16px;
+    overflow: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}

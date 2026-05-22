@@ -1,0 +1,7 @@
+export interface Folder {
+    id: string;
+    name: string;
+    parentId?: string | null;
+    children?: Folder[];
+    files?: any[];
+}

@@ -1,0 +1,18 @@
+{
+    "name": "windows-explorer-backend",
+    "scripts": {
+        "dev": "bun run --watch src/index.ts",
+        "seed": "bun run src/seed.ts"
+    },
+    "dependencies": {
+        "@elysiajs/cors": "latest",
+        "@prisma/client": "6",
+        "dotenv": "^17.4.2",
+        "elysia": "latest",
+        "prisma": "6"
+    },
+    "devDependencies": {
+        "typescript": "latest",
+        "tsx": "latest"
+    }
+}
