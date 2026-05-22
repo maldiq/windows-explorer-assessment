@@ -1,0 +1,208 @@
+{
+  "info": {
+    "_postman_id": "ee1c6ca4-515f-4d7c-804a-feb080952400",
+    "name": "Windows Explorer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7980368"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local}}",
+          "host": [
+            "{{local}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Folder Tree",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local}}/api/v1/folders/tree",
+          "host": [
+            "{{local}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "folders",
+            "tree"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Folder Children",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local}}/api/v1/folders/8bdd910c-417a-472b-bc4d-76ad1766db8c/children",
+          "host": [
+            "{{local}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "folders",
+            "8bdd910c-417a-472b-bc4d-76ad1766db8c",
+            "children"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Folder",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local}}/api/v1/folders/search/project",
+          "host": [
+            "{{local}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "folders",
+            "search",
+            "project"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Rename",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"New Folder Name\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{local}}/api/v1/folders/a2f0316c-2903-4e5b-9831-cc916692f9c2",
+          "host": [
+            "{{local}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "folders",
+            "a2f0316c-2903-4e5b-9831-cc916692f9c2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{local}}/api/v1/folders/a2f0316c-2903-4e5b-9831-cc916692f9c2",
+          "host": [
+            "{{local}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "folders",
+            "a2f0316c-2903-4e5b-9831-cc916692f9c2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Folder",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Testing Folder\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{local}}/api/v1/folders",
+          "host": [
+            "{{local}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "folders"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "local",
+      "value": ""
+    }
+  ]
+}
